@@ -56,16 +56,21 @@ Hue is free; L and C are not.
 
 ### Accent discipline
 
-The accent appears in exactly four places:
+The accent appears in exactly five places:
 
 - the bevel
 - the italic surname in the masthead
 - the left edge of a pull quote
 - the hover tick on an index row
+- the underline of an inline text link, **on hover only** (rest state is
+  `--hair`)
 
-Plus `--hair`-weight rules that fade from accent to hair. A fifth use is
-a regression. Links in body copy are `--bone` with an underline, not
-accent — accent is structural, not semantic.
+Plus `--hair`-weight rules that fade from accent to hair. A sixth use is
+a regression. Links in body copy are `--bone` with a `--hair` underline at
+rest; the underline shifts to accent on hover/focus as a structural
+"cutting edge" cue, consistent with the bevel and the edge-rule gradient.
+Accent never becomes the link's text color and never appears at rest —
+only on the hover/focus transition.
 
 ### Cyan guard
 
