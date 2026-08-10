@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luis Fernando da Rosa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bevel.css">
+</head>
+<body>
+<div class="bevel" aria-hidden="true"></div>
+<div class="bleed" aria-hidden="true"><div class="bleed-img"></div></div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="label">AI Engineer · Multi-agent systems</div>
+    <h1 class="namemark">Luis Fernando <em>da Rosa</em></h1>
+    <p class="standfirst">I build multi-agent systems that write software. I also grind knives. The two turn out to be the same problem: knowing when something is finished.</p>
+    <div class="edge-rule"></div>
+  </header>
+
+  <div class="section-head"><span class="label">Writing</span><span class="label">Four entries</span></div>
+
+  <main>
+    <a class="entry" href="#">
+      <div class="entry-side"><span class="label">02 Aug 2026</span><span class="label">Agents</span></div>
+      <div>
+        <h2 class="entry-title">Why the router kept choosing the wrong specialist</h2>
+        <p class="entry-dek">A routing layer that scored 94% on the eval set and still sent every schema question to the frontend agent.</p>
+      </div>
+    </a>
+    <a class="entry" href="#">
+      <div class="entry-side"><span class="label">19 Jul 2026</span><span class="label">Method</span></div>
+      <div>
+        <h2 class="entry-title">Evals are not tests</h2>
+        <p class="entry-dek">Tests tell you something broke. Evals tell you something drifted. Confusing the two costs you a quarter.</p>
+      </div>
+    </a>
+    <a class="entry" href="#">
+      <div class="entry-side"><span class="label">28 Jun 2026</span><span class="label">Systems</span></div>
+      <div>
+        <h2 class="entry-title">The cost of context</h2>
+        <p class="entry-dek">What forty thousand traced agent steps say about where the tokens actually go.</p>
+      </div>
+    </a>
+    <a class="entry" href="#">
+      <div class="entry-side"><span class="label">11 May 2026</span><span class="label">Craft</span></div>
+      <div>
+        <h2 class="entry-title">Grinding a bevel by hand</h2>
+        <p class="entry-dek">On tolerance, feedback loops, and why I trust my hands before my calipers.</p>
+      </div>
+    </a>
+  </main>
+
+  <section class="sample">
+    <div class="label">Reading view</div>
+    <h2 class="sample-head">Evals are not tests</h2>
+    <div class="sample-meta"><span class="label">19 July 2026 · 9 min · Method</span></div>
+    <div class="prose">
+      <p>The first eval harness I built was really a test suite wearing a costume. It asserted. It went green or it went red, and when it went red I fixed the thing it pointed at, and I felt productive in the way you feel productive when you are moving quickly in a direction nobody has checked.</p>
+      <p>A test asks a closed question: did this function return what I said it would? An eval asks an open one: is this system still behaving the way it did last week, on inputs I have not thought of yet? The second question has no green.</p>
+      <div class="pull">A test fails. An eval drifts. You do not notice drift by watching for red.</div>
+      <p>What changed for me was tracking distributions instead of assertions. Not <em>did the router pick correctly</em>, but <em>how confidently did it pick, across the whole set, compared to the last five runs</em>. The failure mode I had been chasing for a month showed up immediately: the router had not gotten worse at choosing. It had gotten less certain about everything, uniformly, and the tie-breaking was doing the real work.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span class="label">Luis Fernando da Rosa · 2026</span>
+    <span class="label">RSS · GitHub · Email</span>
+  </footer>
+</div>
+
+
+</body>
+</html>
