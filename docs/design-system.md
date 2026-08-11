@@ -266,7 +266,73 @@ no JavaScript at all in its final form, and it should stay that way.
 
 ---
 
-## 11. Open decisions
+## 11. The mark
+
+`assets/img/logo.svg` — the LR monogram. A struck plate: two initials on
+the void ground inside a ring that catches the accent at one corner and
+fades to hair. The edge-rule logic bent into a frame.
+
+Not a crest. Bevel's source is precision metalwork, not heraldry — this
+is *bench luxury*, not *heirloom luxury*.
+
+### Geometry
+
+On a 100×100 viewBox:
+
+| Element | Value |
+|---|---|
+| Tile | `100 × 100`, `rx 16`, `--void` |
+| Ring | inset `7`, `86 × 86`, `rx 10`, `stroke-width 2` |
+| Ring stroke | gradient `0,0 → 1,1`: accent at 0, hair at 0.38 and 1 |
+| Letters | `--bone`, no stroke |
+| Letter box | `x 20→80`, cap height `33.6` |
+
+Ring weight 2 is a floor, not a preference: at 1.5 it ghosts rather than
+renders. Radius 16 sits between a plaque (10) and an app icon (24).
+
+### Letterforms
+
+**Gelasio Regular**, converted to outlines — SIL Open Font License 1.1,
+metrically compatible with Georgia. Not Instrument Serif: the mark is
+deliberately a different face from the masthead, which is ordinary
+practice for a monogram.
+
+Outlines are non-negotiable in any format. A favicon cannot load a
+webfont, so `<text>` would render in whatever serif the viewer's machine
+happens to have.
+
+No emboldening. Stroking to add weight thickens hairlines proportionally
+more than stems, flattening the contrast that makes a serif a serif.
+
+### Size behaviour
+
+Crisp at 48px and up. Clean at 32px — **which is what a Retina display
+shows in a 16px tab slot**. Fails at a true 16px, where the letters go to
+mush; that only affects 1× displays and is accepted.
+
+### Constraints
+
+- **Colours are literal hex, not tokens.** An SVG loaded as a favicon has
+  no access to `:root`. This is the one place in the project where a
+  colour is duplicated — retune `--accent` and this file will not follow.
+- **The mark is not on the page.** Favicon only. The masthead already
+  carries the bevel and the namemark, and rule 1 allows one bold element.
+- **Accent budget.** §2 permits accent in exactly five on-page places. A
+  favicon is outside the page, so the ring costs nothing. The moment the
+  mark lands on the page — footer included — it becomes a sixth use and
+  the ring must go flat `--hair`.
+
+### Files
+
+`logo.svg` (master), `icon-32.png` (fallback for browsers without SVG
+favicon support), `apple-touch-icon.png` (180×180, square — iOS applies
+its own corner mask, so rounding it here would double-round).
+
+Linked from `index.html`, `cv.html`, and `docs/post-template.html`.
+
+---
+
+## 12. Open decisions
 
 - Real photograph to replace the generated placeholder
 - Post page layout beyond the reading view (footnotes, code blocks, images in prose)
