@@ -130,7 +130,7 @@ footer{margin-top:12vh;padding:2.6rem 0 7rem;border-top:1px solid var(--hair);di
 
 .role{display:grid;grid-template-columns:150px 1fr;gap:2.4rem;padding:2rem 0;border-bottom:1px solid var(--hair)}
 .role-side .label{display:block}
-.role-side .label + .label{margin-top:.45rem;color:var(--accent-deep)}
+.role-side .label + .label{margin-top:.45rem}
 .role-title{font-family:var(--display);font-weight:400;font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.15}
 .role-bullets{list-style:none;margin-top:.8rem}
 .role-bullets li{color:var(--muted);max-width:64ch;line-height:1.55;padding-left:1.1rem;position:relative;margin-top:.7rem}
@@ -139,20 +139,20 @@ footer{margin-top:12vh;padding:2.6rem 0 7rem;border-top:1px solid var(--hair);di
 .toolkit{display:grid;grid-template-columns:150px 1fr;gap:2.4rem;padding:1.4rem 0;border-bottom:1px solid var(--hair)}
 .toolkit dt{grid-column:1}
 .toolkit dd{grid-column:2;color:var(--muted);max-width:64ch;line-height:1.5}
-.toolkit-grid{display:contents}
 
 .project-note{color:var(--muted);max-width:60ch;margin-top:1rem;line-height:1.6}
 .project-note a{color:var(--bone);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--hair)}
 .project-note a:hover{text-decoration-color:var(--accent)}
 
 .cv-download{margin-top:6vh}
-.cv-download a{color:var(--bone);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--accent-deep)}
+.cv-download a{color:var(--bone);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--hair)}
 .cv-download a:hover{text-decoration-color:var(--accent)}
 
 @media (max-width:680px){
   .role,.toolkit{grid-template-columns:1fr;gap:.8rem}
-  .role-side{display:flex;gap:1.4rem}
+  .role-side{display:flex;gap:1.4rem;flex-wrap:wrap;row-gap:.3rem}
   .role-side .label + .label{margin-top:0}
+  .toolkit dt,.toolkit dd{grid-column:auto}
   .toolkit dt{margin-bottom:.3rem}
 }
 
