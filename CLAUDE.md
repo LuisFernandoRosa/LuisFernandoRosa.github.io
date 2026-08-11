@@ -19,6 +19,10 @@ graphite ground, one chrysocolla accent, bled portrait, ground-edge signature.
 - **Site identity / nav (name, tagline, links) →** written in the HTML of
   `index.html` and `cv.html`. Keep them consistent by hand — there is no
   template engine, by design.
+- **Analytics →** a GoatCounter pixel (`<img>`, no JS) at the bottom of each
+  page's `<body>`. Dashboard: <https://luisfernandorosa.goatcounter.com> —
+  private, and stays that way. Every page needs its **own** `?p=` matching its
+  URL, or they all collapse into one row.
 
 ## Run it
 
@@ -27,6 +31,9 @@ No build step, no dependencies.
     python3 -m http.server 8000
 
 …or just open `index.html`. **No client-side JavaScript — keep it that way.**
+The analytics pixel is a plain `<img>` precisely so this rule survives; if you
+ever swap it for GoatCounter's `count.js`, you are amending the rule, not
+working around it — say so here.
 
 ## Add a blog post
 
@@ -34,6 +41,10 @@ Write the post in Markdown and hand it over. It gets rendered into a
 standalone Bevel HTML page in `writing/` following `docs/post-template.html`,
 and linked from the homepage index. Code blocks are `--bone` on `--surface`
 with no syntax colouring; diagrams are inline SVG (no JS).
+
+**Don't forget:** replace `{{ SLUG }}` in the analytics pixel at the bottom of
+the template with the post's filename. Miss it and the post's views land on a
+literal `/writing/{{ SLUG }}` row in the dashboard.
 
 ## Deploy
 
