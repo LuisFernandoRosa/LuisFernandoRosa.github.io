@@ -405,7 +405,7 @@ Note: the existing `@media (max-width:680px)` block stays; this adds a second on
     <h1 class="namemark">Luis Fernando <em>da Rosa</em></h1>
     <p class="cv-lede">I build AI systems that ship, not prototypes that stall. Six years across agentic systems, LLM pipelines, and computer vision — designing multi-agent architectures, owning technical decisions end to end, and navigating the constraints that decide whether AI reaches production: cost, latency, security, and messy data.</p>
     <div class="cv-contact">
-      <a href="mailto:luis.fer.rosa@hotmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/luisfernandodarosa">LinkedIn</a>
       <a href="https://www.linkedin.com/in/luisfernandodarosa">LinkedIn</a>
       <a href="https://github.com/LuisFernandoRosa">GitHub</a>
       <span class="label">Paraná, Brazil</span>
