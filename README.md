@@ -1,45 +1,39 @@
 # personal-blog
 
-Static prototype of the blog. Direction: **Bevel** — graphite ground,
-chrysocolla accent, bled portrait, ground-edge signature.
+Personal website + writing for Luis Fernando da Rosa. Direction: **Bevel** —
+graphite ground, chrysocolla accent, bled portrait, ground-edge signature.
+Pure static HTML + CSS, no build step, no JavaScript.
 
 ```
-index.html                 the page
-assets/css/bevel.css       all styles, tokens at the top in :root
-assets/img/portrait.jpg    header portrait (placeholder — generated)
-docs/design-system.md      the spec: tokens, rules, components, constraints
+index.html                  homepage: masthead + Writing index
+cv.html                     curriculum (experience-led)
+writing/                    blog posts (one standalone .html each)
+assets/css/bevel.css        all styles + design tokens in :root
+assets/img/portrait.jpg     header portrait
+assets/*.pdf                downloadable résumé
+docs/design-system.md       the design spec (source of truth)
+docs/post-template.html     per-post skeleton
+CLAUDE.md                   working instructions
 ```
 
 ## Run it
 
-No build step. Open `index.html`, or:
+No build step, no dependencies:
 
-```bash
-python3 -m http.server 8000
-```
+    python3 -m http.server 8000
 
-There is no JavaScript. Keep it that way.
+…or open `index.html` directly.
 
-## Before you change anything
+## Changing the look
 
-Read `docs/design-system.md` first — specifically the three rules in §1
-and the accent discipline in §2. Most of the values in the CSS look
-arbitrary and aren't; the doc explains which ones are load-bearing.
+- **Accent / fonts / colours →** `assets/css/bevel.css` `:root` (one place).
+  Changing a font also means updating the Google Fonts `<link>` in each page head.
+- **Name / tagline / links →** the HTML of `index.html` and `cv.html`.
 
-The short version:
+Read `docs/design-system.md` first — the three rules in §1 and accent discipline
+in §2 are load-bearing.
 
-- **One bold element.** The bevel is it.
-- **Fade the ground, never the subject.**
-- **It has to survive a bad post.**
+## Deploy
 
-## Known TODO
-
-- Replace `assets/img/portrait.jpg` with a real photograph.
-  Requirements are in §5 of the design doc — the dark left side is not
-  optional, the mask depends on it.
-- Self-host Instrument Serif, Archivo, and JetBrains Mono. Currently
-  loaded from Google Fonts, which is the slowest thing on the page.
-  Subset to Latin + Latin Extended-A for Portuguese diacritics.
-- Post template. `index.html` includes a reading-view sample at the
-  bottom; that's the type treatment, not a real template yet.
-- Decide on the static site generator. Anything that emits plain HTML.
+GitHub Pages, served directly via `.nojekyll`. Push to the default branch of
+`LuisFernandoRosa.github.io` and it's live at the root URL.
