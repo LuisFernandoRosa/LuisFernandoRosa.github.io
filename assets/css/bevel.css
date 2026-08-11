@@ -53,7 +53,7 @@ a{color:inherit;text-decoration:none}
 .bleed-img{
   position:absolute;inset:0;
   background-image:var(--portrait);
-  background-size:auto 116%;background-position:58% 90%;
+  background-size:auto 110%;background-position:56% 38%;
   filter:saturate(.42) contrast(1.04) brightness(.86);
   -webkit-mask-image:linear-gradient(to left,#000 0%,#000 42%,rgba(0,0,0,.62) 68%,rgba(0,0,0,.16) 87%,transparent 100%);
   mask-image:linear-gradient(to left,#000 0%,#000 42%,rgba(0,0,0,.62) 68%,rgba(0,0,0,.16) 87%,transparent 100%);
@@ -167,6 +167,7 @@ footer{margin-top:12vh;padding:2.6rem 0 7rem;border-top:1px solid var(--hair);di
   .namemark{max-width:none}
   .bleed{width:100%;height:62vh}
   .bleed-img{
+    background-size:auto 100%;background-position:56% 0%;
     filter:saturate(.35) contrast(1.02) brightness(.42);
     -webkit-mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.5) 55%,transparent 100%);
     mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.5) 55%,transparent 100%);
