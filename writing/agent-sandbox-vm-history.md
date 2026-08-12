@@ -1,5 +1,5 @@
 ---
-title: My Agent Sandbox VM History
+title: My Agent Sandbox VM history
 slug: agent-sandbox-vm-history
 date: 2026-08-12
 category: History
