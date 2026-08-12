@@ -1,0 +1,7 @@
+# Everything here is meant to be read, quoted, and cited — by people and by
+# machines. No crawler exclusions, deliberately.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://luisfernandorosa.github.io/sitemap.xml

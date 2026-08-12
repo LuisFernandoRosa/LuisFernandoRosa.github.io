@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-maintained: every new page needs a <url> entry here. No build step, by design. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://luisfernandorosa.github.io/</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://luisfernandorosa.github.io/cv.html</loc>
+    <lastmod>2026-08-11</lastmod>
+  </url>
+  <url>
+    <loc>https://luisfernandorosa.github.io/writing/agent-sandbox-vm-history.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+</urlset>

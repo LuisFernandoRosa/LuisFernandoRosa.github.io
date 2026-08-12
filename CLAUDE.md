@@ -49,6 +49,19 @@ with no syntax colouring; diagrams are inline SVG (no JS).
 the template with the post's filename. Miss it and the post's views land on a
 literal `/writing/{{ SLUG }}` row in the dashboard.
 
+**Also don't forget:** add a `<url>` entry to `sitemap.xml` for the new post,
+and bump `<lastmod>` on `/` (the homepage index changed). It's hand-maintained
+— there's no build step to regenerate it.
+
+## Crawlers
+
+`robots.txt` allows everything, deliberately — this is written to be read,
+quoted, and cited, by people and machines alike. It points at `sitemap.xml`,
+which lists every page with an absolute `https://luisfernandorosa.github.io/`
+URL. **Adding a custom domain means rewriting every `<loc>` in the sitemap and
+the `Sitemap:` line in `robots.txt`** — absolute URLs are required by the
+sitemap spec, so they can't be made relative.
+
 ## Deploy
 
 GitHub Pages serves the repo directly (`.nojekyll`). Target repo:
