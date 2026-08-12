@@ -37,9 +37,12 @@ working around it — say so here.
 
 ## Add a blog post
 
-Write the post in Markdown and hand it over. It gets rendered into a
-standalone Bevel HTML page in `writing/` following `docs/post-template.html`,
-and linked from the homepage index. Code blocks are `--bone` on `--surface`
+Write the post in Markdown and hand it over. The Markdown is kept as the
+source at `writing/<slug>.md` with front matter (`title`, `slug`, `date`,
+`category`, `tags`, `dek`, `reading_time`), and rendered by hand into a
+standalone Bevel HTML page at `writing/<slug>.html` following
+`docs/post-template.html`, then linked from the homepage index (`.entry`
+row: date + category on the left, title + dek on the right). Code blocks are `--bone` on `--surface`
 with no syntax colouring; diagrams are inline SVG (no JS).
 
 **Don't forget:** replace `{{ SLUG }}` in the analytics pixel at the bottom of

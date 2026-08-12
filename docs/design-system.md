@@ -209,6 +209,17 @@ Display serif, 1.85rem, `border-left: 1px solid var(--accent)`, 1.8rem
 left padding, max 26ch. No quotation marks, no attribution styling, no
 centring.
 
+### Post tags
+
+A single row of `.label`s at the foot of the article, above the footer:
+hairline top rule, `1.4rem` gap, max 60ch so it sits under the prose
+column. The first label is the word `Tags` in `--accent-deep`; the tags
+themselves are `--muted`. No pills, no borders, no accent — tags are
+metadata, not navigation, and the accent budget is already spent.
+
+Canonical tag values live in the post's Markdown front matter
+(`writing/<slug>.md`); the HTML row is a rendering of them.
+
 ### Edge rule
 
 ```css

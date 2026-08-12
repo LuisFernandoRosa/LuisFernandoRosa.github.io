@@ -122,6 +122,12 @@ a{color:inherit;text-decoration:none}
   margin:3rem 0;padding:1.6rem 0 1.6rem 1.8rem;
   border-left:1px solid var(--accent);max-width:26ch;
 }
+.post-tags{
+  display:flex;flex-wrap:wrap;gap:1.4rem;max-width:60ch;
+  margin-top:4vh;padding-top:1.1rem;border-top:1px solid var(--hair);
+}
+.post-tags .label:first-child{color:var(--accent-deep)}
+
 footer{margin-top:12vh;padding:2.6rem 0 7rem;border-top:1px solid var(--hair);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
 
 /* ---------- cv ---------- */
