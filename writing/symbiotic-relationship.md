@@ -2,8 +2,8 @@
 title: Symbiotic relationship
 slug: symbiotic-relationship
 date: 2026-08-19
-category: Essay
-tags: [ai, society, essay]
+category: Thinking
+tags: [ai, society, thinking]
 dek: When ordinary people use AI the way developers already do, the brain adapts around it. Not survival in the forest — survival in a modern world.
 reading_time: 2 min
 ---
