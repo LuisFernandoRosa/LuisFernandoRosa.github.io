@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://luisfernandorosa.github.io/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-19</lastmod>
   </url>
   <url>
     <loc>https://luisfernandorosa.github.io/cv.html</loc>
@@ -12,5 +12,9 @@
   <url>
     <loc>https://luisfernandorosa.github.io/writing/agent-sandbox-vm-history.html</loc>
     <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://luisfernandorosa.github.io/writing/symbiotic-relationship.html</loc>
+    <lastmod>2026-08-19</lastmod>
   </url>
 </urlset>
